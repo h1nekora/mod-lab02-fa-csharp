@@ -15,7 +15,7 @@ namespace fans
   public class FA
   {
     
-    public bool? Run(State InitialState, IEnumerable<char> s)
+    protected bool? Run(State InitialState, IEnumerable<char> s)
     {
         State current = InitialState;
         foreach (var c in s) // цикл по всем символам 
@@ -30,7 +30,7 @@ namespace fans
   }
 
   class FA1 : FA
-{
+  {
     public static State q0 = new State()
     {
         Name = "q0",
@@ -67,10 +67,10 @@ namespace fans
         q3.Transitions['0'] = q3;
     }
     public bool? Run(IEnumerable<char> s)=>base.Run(q0, s);
-}
+  }
 
   class FA2 : FA
-{
+  {
     public static State q0 = new State()
     {
         Name = "q0",
@@ -108,10 +108,10 @@ namespace fans
 
     }
     public bool? Run(IEnumerable<char> s) => base.Run(q0, s);
-}
+  }
   
   class FA3 : FA
-{
+  {
     public static State q0 = new State()
     {
         Name = "q0",
@@ -141,7 +141,7 @@ namespace fans
 
     }
     public bool? Run(IEnumerable<char> s) => base.Run(q0, s);
-}
+  }
 
   class Program
   {
