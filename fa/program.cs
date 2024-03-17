@@ -29,7 +29,7 @@ namespace fans
     }
   }
 
-  class FA1 : FA
+  public class FA1 : FA
   {
     public static State q0 = new State()
     {
@@ -69,7 +69,7 @@ namespace fans
     public bool? Run(IEnumerable<char> s)=>base.Run(q0, s);
   }
 
-  class FA2 : FA
+  public class FA2 : FA
   {
     public static State q0 = new State()
     {
@@ -110,7 +110,7 @@ namespace fans
     public bool? Run(IEnumerable<char> s) => base.Run(q0, s);
   }
   
-  class FA3 : FA
+  public class FA3 : FA
   {
     public static State q0 = new State()
     {
