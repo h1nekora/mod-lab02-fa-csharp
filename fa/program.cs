@@ -65,7 +65,7 @@ namespace fans
     {
         q0.Transitions['0'] = q1;
         q0.Transitions['1'] = q2;
-        q1.Transitions['1'] = q2;
+        q1.Transitions['1'] = q3;
         q1.Transitions['0'] = q4;
         q2.Transitions['0'] = q3;
         q2.Transitions['1'] = q2;
